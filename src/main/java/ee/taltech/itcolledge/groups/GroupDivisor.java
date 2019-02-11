@@ -10,18 +10,18 @@ public class GroupDivisor {
         String line = sc.nextLine();
         System.out.println("You said your name is: " + line);
 
-        // todo using example above create a program to calculate number of groups
         System.out.println("---------=============---------");
         System.out.println("\n");
         System.out.println("\n");
         System.out.println("Insert the number of people");
-        int people = 0;
+        line = sc.nextLine();
+        int people = Integer.parseInt(line);
         System.out.println("Insert the group size");
-        int size = 0;
+        line = sc.nextLine();
+        int size = Integer.parseInt(line);
 
-        //todo create tests for your calculator
-        int groups = 0;
-        int leftover = 0;
+        int groups = people / size;
+        int leftover = people % size;
 
         System.out.println(String.format("You get %d full groups, leftover %d.", groups, leftover));
         System.out.println("---------=============---------");
